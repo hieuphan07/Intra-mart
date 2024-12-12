@@ -1,0 +1,12 @@
+INSERT INTO tab1_sample_db_nw_04 VALUES (1, NULL);
+INSERT INTO tab1_sample_db_nw_04 VALUES (2, 1);
+INSERT INTO tab1_sample_db_nw_04 VALUES (3, 2);
+INSERT INTO tab1_sample_db_nw_04 VALUES (4, 2);
+INSERT INTO tab1_sample_db_nw_04 VALUES (5, 4);
+INSERT INTO tab1_sample_db_nw_04 VALUES (6, 4);
+INSERT INTO tab1_sample_db_nw_04 VALUES (7, 1);
+INSERT INTO tab1_sample_db_nw_04 VALUES (8, 7);
+INSERT INTO tab1_sample_db_nw_04 VALUES (9, 1);
+INSERT INTO tab1_sample_db_nw_04 VALUES (10, 9);
+INSERT INTO tab1_sample_db_nw_04 VALUES (11, 10);
+INSERT INTO tab1_sample_db_nw_04 VALUES (12, 9);
