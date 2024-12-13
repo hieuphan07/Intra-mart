@@ -1,0 +1,678 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root xmlns="http://intra-mart.co.jp/im_menu/menu-group-data">
+    <menu-group-data id="8fyxqlzuw684am0">
+        <category id="im_global_nav_pc">
+        </category>
+        <menu-item menu-id="8fyxqlzuw684am0" sort-number="0" type="folder" method="get" use-iframe="false" use-popup="false">
+            <display-names>
+                <display-name locale="ja">RJのみ</display-name>
+                <display-name locale="en">RJのみ</display-name>
+                <display-name locale="zh_CN">RJのみ</display-name>
+            </display-names>
+            <menu-item menu-id="8fyxr153n6bmxm0" sort-number="0" type="item" url="viewcreator/dataview/list/8fyxqwc3469ovm0" method="get" use-iframe="false" use-popup="false">
+                <display-names>
+                    <display-name locale="ja">①IM-Workflowユーザのみ</display-name>
+                    <display-name locale="en">①IM-Workflowユーザのみ</display-name>
+                    <display-name locale="zh_CN">①IM-Workflowユーザのみ</display-name>
+                </display-names>
+            </menu-item>
+            <menu-item menu-id="8fyxr4d776br6m0" sort-number="1" type="item" url="viewcreator/dataview/list/8fyxqy6d16a5pm0" method="get" use-iframe="false" use-popup="false">
+                <display-names>
+                    <display-name locale="ja">③両方_RJ</display-name>
+                    <display-name locale="en">③両方_RJ</display-name>
+                    <display-name locale="zh_CN">③両方_RJ</display-name>
+                </display-names>
+            </menu-item>
+        </menu-item>
+    </menu-group-data>
+    <menu-group-data id="8fyxqmm5d686xm0">
+        <category id="im_global_nav_pc">
+        </category>
+        <menu-item menu-id="8fyxqmm5d686xm0" sort-number="1" type="folder" method="get" use-iframe="false" use-popup="false">
+            <display-names>
+                <display-name locale="ja">パートナーのみ</display-name>
+                <display-name locale="en">パートナーのみ</display-name>
+                <display-name locale="zh_CN">パートナーのみ</display-name>
+            </display-names>
+            <menu-item menu-id="8fyxr3d466bo6m0" sort-number="0" type="item" url="viewcreator/dataview/list/8fyxqxehc69ymm0" method="get" use-iframe="false" use-popup="false">
+                <display-names>
+                    <display-name locale="ja">②im_workflow パートナーユーザのみ</display-name>
+                    <display-name locale="en">②im_workflow パートナーユーザのみ</display-name>
+                    <display-name locale="zh_CN">②im_workflow パートナーユーザのみ</display-name>
+                </display-names>
+            </menu-item>
+            <menu-item menu-id="8fyxr5rxs6btsm0" sort-number="1" type="item" url="viewcreator/dataview/list/8fyxqy6d16a5pm0" method="get" use-iframe="false" use-popup="false">
+                <display-names>
+                    <display-name locale="ja">③両方_パートナー</display-name>
+                    <display-name locale="en">③両方_パートナー</display-name>
+                    <display-name locale="zh_CN">③両方_パートナー</display-name>
+                </display-names>
+            </menu-item>
+        </menu-item>
+    </menu-group-data>
+    <menu-group-data id="topmenu">
+        <category id="im_global_nav_pc">
+        </category>
+        <menu-item menu-id="topmenu" sort-number="2" type="folder" method="get" use-iframe="false" use-popup="false">
+            <display-names>
+                <display-name locale="ja">Top</display-name>
+                <display-name locale="en">Top</display-name>
+                <display-name locale="zh_CN">Top</display-name>
+            </display-names>
+            <menu-item menu-id="portal_gn-pc" sort-number="1" type="item" url="portal/desktop" method="get" use-iframe="false" use-popup="false">
+                <display-names>
+                    <display-name locale="ja">Portal</display-name>
+                    <display-name locale="en">Portal</display-name>
+                    <display-name locale="zh_CN">Portal</display-name>
+                </display-names>
+            </menu-item>
+            <menu-item menu-id="file_exchange_upload_gn-pc" sort-number="10" type="item" url="exchange/user/file/list" method="get" use-iframe="false" use-popup="false">
+                <display-names>
+                    <display-name locale="ja">FileExchange</display-name>
+                    <display-name locale="en">FileExchange</display-name>
+                    <display-name locale="zh_CN">FileExchange</display-name>
+                </display-names>
+            </menu-item>
+        </menu-item>
+    </menu-group-data>
+    <menu-group-data id="imw_gn-pc">
+        <category id="im_global_nav_pc">
+        </category>
+        <menu-item menu-id="imw_gn-pc" sort-number="3" type="folder" method="get" use-iframe="false" use-popup="false">
+            <display-names>
+                <display-name locale="ja">Workflow</display-name>
+                <display-name locale="en">Workflow</display-name>
+                <display-name locale="zh_CN">Workflow</display-name>
+            </display-names>
+            <menu-item menu-id="imw_list_applications_gn-pc" sort-number="1" type="item" url="im_workflow/applications/bookmarks" method="get" use-iframe="false" use-popup="false">
+                <display-names>
+                    <display-name locale="ja">申請一覧</display-name>
+                    <display-name locale="en">Application List</display-name>
+                    <display-name locale="zh_CN">申请一览表</display-name>
+                </display-names>
+            </menu-item>
+            <menu-item menu-id="imw_list_matters_gn-pc" sort-number="2" type="item" url="im_workflow/matters/status/active-matter-tasks" method="get" use-iframe="false" use-popup="false">
+                <display-names>
+                    <display-name locale="ja">案件一覧</display-name>
+                    <display-name locale="en">Job List</display-name>
+                    <display-name locale="zh_CN">案件一览表</display-name>
+                </display-names>
+            </menu-item>
+            <menu-item menu-id="imw_archived_matter_gn-pc" sort-number="100" type="item" url="im_workflow/archived_matter/archived_matter_user" method="get" use-iframe="false" use-popup="false">
+                <display-names>
+                    <display-name locale="ja">過去案件</display-name>
+                    <display-name locale="en">Archived Matter</display-name>
+                    <display-name locale="zh_CN">过去案件</display-name>
+                </display-names>
+            </menu-item>
+            <menu-item menu-id="imw_stamp_gn-pc" sort-number="160" type="item" url="im_workflow/user/stamp/stamp_mst" method="get" use-iframe="false" use-popup="false">
+                <display-names>
+                    <display-name locale="ja">印影設定</display-name>
+                    <display-name locale="en">Stamp Setting</display-name>
+                    <display-name locale="zh_CN">电子印章设定</display-name>
+                </display-names>
+            </menu-item>
+            <menu-item menu-id="imw_act_config_gn-pc" sort-number="180" type="folder" method="get" use-iframe="false" use-popup="false">
+                <display-names>
+                    <display-name locale="ja">代理設定</display-name>
+                    <display-name locale="en">Delegation setting</display-name>
+                    <display-name locale="zh_CN">代理设定</display-name>
+                </display-names>
+                <menu-item menu-id="imw_trg_act_conf_gn-pc" sort-number="20" type="item" url="im_workflow/act_config/trg_act_conf/trg_act_conf_user" method="get" use-iframe="false" use-popup="false">
+                    <display-names>
+                        <display-name locale="ja">代理先設定</display-name>
+                        <display-name locale="en">Set Delegatee</display-name>
+                        <display-name locale="zh_CN">代理人设定</display-name>
+                    </display-names>
+                </menu-item>
+                <menu-item menu-id="imw_org_act_cnfm_gn-pc" sort-number="40" type="item" url="im_workflow/act_config/org_act_cnfm/org_act_cnfm_user" method="get" use-iframe="false" use-popup="false">
+                    <display-names>
+                        <display-name locale="ja">代理元確認</display-name>
+                        <display-name locale="en">Confirm Delegator</display-name>
+                        <display-name locale="zh_CN">被代理人确认</display-name>
+                    </display-names>
+                </menu-item>
+            </menu-item>
+        </menu-item>
+    </menu-group-data>
+    <menu-group-data id="8frqnpy62furwm0">
+        <category id="im_global_nav_pc">
+        </category>
+        <menu-item menu-id="8frqnpy62furwm0" sort-number="4" type="folder" method="get" use-iframe="false" use-popup="false">
+            <display-names>
+                <display-name locale="ja">V3_開発環境</display-name>
+                <display-name locale="en">V3_Dev</display-name>
+                <display-name locale="zh_CN">V3_Dev</display-name>
+            </display-names>
+            <menu-item menu-id="8frqpq32lfwl2m0" sort-number="0" type="folder" method="get" use-iframe="false" use-popup="false">
+                <display-names>
+                    <display-name locale="ja">共通</display-name>
+                    <display-name locale="en">public</display-name>
+                    <display-name locale="zh_CN">public</display-name>
+                </display-names>
+                <menu-item menu-id="8frqpqxglfwle" sort-number="0" type="item" url="forma/normal/view/regist_application_view/sf_nim011_apl003" method="get" use-iframe="false" use-popup="false">
+                    <display-names>
+                        <display-name locale="ja">ログダウンロード</display-name>
+                        <display-name locale="en">Log download</display-name>
+                        <display-name locale="zh_CN">Log download</display-name>
+                    </display-names>
+                </menu-item>
+            </menu-item>
+            <menu-item menu-id="8fwl3d3sgyqjxm0" sort-number="2" type="folder" method="get" use-iframe="false" use-popup="false">
+                <display-names>
+                    <display-name locale="ja">test_yamanaka</display-name>
+                    <display-name locale="en">test_yamanaka</display-name>
+                    <display-name locale="zh_CN">test_yamanaka</display-name>
+                </display-names>
+                <menu-item menu-id="8frza4obqk11s" sort-number="0" type="item" url="forma/normal/view/regist_application_view/test_yamanaka_csv_import" method="get" use-iframe="false" use-popup="false">
+                    <display-names>
+                        <display-name locale="ja">CSVインポート</display-name>
+                        <display-name locale="en">CSVimport</display-name>
+                        <display-name locale="zh_CN">CSVimport</display-name>
+                    </display-names>
+                </menu-item>
+                <menu-item menu-id="8fwl3dwfiyqku" sort-number="1" type="item" url="forma/normal/view/list_view/yamanaka_change_item_type" method="get" use-iframe="false" use-popup="false">
+                    <display-names>
+                        <display-name locale="ja">yamanaka_change_item_type</display-name>
+                        <display-name locale="en">yamanaka_change_item_type</display-name>
+                        <display-name locale="zh_CN">yamanaka_change_item_type</display-name>
+                    </display-names>
+                </menu-item>
+            </menu-item>
+        </menu-item>
+    </menu-group-data>
+    <menu-group-data id="bis_gn">
+        <category id="im_global_nav_pc">
+        </category>
+        <menu-item menu-id="bis_gn" sort-number="5" type="folder" method="get" use-iframe="false" use-popup="false">
+            <display-names>
+                <display-name locale="ja">IM-BIS</display-name>
+                <display-name locale="en">IM-BIS</display-name>
+                <display-name locale="zh_CN">IM-BIS</display-name>
+            </display-names>
+            <menu-item menu-id="bis_list_applications_gn-pc" sort-number="1" type="item" url="im_workflow/applications/bookmarks" method="get" use-iframe="false" use-popup="false">
+                <display-names>
+                    <display-name locale="ja">申請一覧</display-name>
+                    <display-name locale="en">Application List</display-name>
+                    <display-name locale="zh_CN">申请一览表</display-name>
+                </display-names>
+            </menu-item>
+            <menu-item menu-id="bis_list_matters_gn-pc" sort-number="2" type="item" url="im_workflow/matters/status/active-matter-tasks" method="get" use-iframe="false" use-popup="false">
+                <display-names>
+                    <display-name locale="ja">案件一覧</display-name>
+                    <display-name locale="en">Job List</display-name>
+                    <display-name locale="zh_CN">案件一览表</display-name>
+                </display-names>
+            </menu-item>
+            <menu-item menu-id="imbis_archived_matter_gn" sort-number="4" type="item" url="bis/archived_matter/archived_matter_user" method="get" use-iframe="false" use-popup="false">
+                <display-names>
+                    <display-name locale="ja">過去案件</display-name>
+                    <display-name locale="en">Archived Matter</display-name>
+                    <display-name locale="zh_CN">以前的案件</display-name>
+                </display-names>
+            </menu-item>
+            <menu-item menu-id="imbis_stamp_gn" sort-number="5" type="item" url="im_workflow/user/stamp/stamp_mst" method="get" use-iframe="false" use-popup="false">
+                <display-names>
+                    <display-name locale="ja">印影設定</display-name>
+                    <display-name locale="en">Stamp Setting</display-name>
+                    <display-name locale="zh_CN">电子印章设定</display-name>
+                </display-names>
+            </menu-item>
+            <menu-item menu-id="imbis_act_config_gn" sort-number="6" type="folder" method="get" use-iframe="false" use-popup="false">
+                <display-names>
+                    <display-name locale="ja">代理設定</display-name>
+                    <display-name locale="en">Delegation Setting</display-name>
+                    <display-name locale="zh_CN">代理设定</display-name>
+                </display-names>
+                <menu-item menu-id="imbis_trg_act_gn" sort-number="0" type="item" url="im_workflow/act_config/trg_act_conf/trg_act_conf_user" method="get" use-iframe="false" use-popup="false">
+                    <display-names>
+                        <display-name locale="ja">代理先設定</display-name>
+                        <display-name locale="en">Set Delegatee</display-name>
+                        <display-name locale="zh_CN">代理人设定</display-name>
+                    </display-names>
+                </menu-item>
+                <menu-item menu-id="imbis_org_act_gn" sort-number="1" type="item" url="im_workflow/act_config/org_act_cnfm/org_act_cnfm_user" method="get" use-iframe="false" use-popup="false">
+                    <display-names>
+                        <display-name locale="ja">代理元確認</display-name>
+                        <display-name locale="en">Confirm Delegator</display-name>
+                        <display-name locale="zh_CN">被代理人确认</display-name>
+                    </display-names>
+                </menu-item>
+            </menu-item>
+        </menu-item>
+    </menu-group-data>
+    <menu-group-data id="tenant_management_gn-pc">
+        <category id="im_global_nav_pc">
+        </category>
+        <menu-item menu-id="tenant_management_gn-pc" sort-number="6" type="folder" url="empty" method="get" use-iframe="false" use-popup="false">
+            <display-names>
+                <display-name locale="ja">テナント管理</display-name>
+                <display-name locale="en">Tenant Management</display-name>
+                <display-name locale="zh_CN">Tenant管理</display-name>
+            </display-names>
+            <menu-item menu-id="tenant_authz_settings_gn-pc" sort-number="0" type="item" url="tenant/authz/settings" method="get" use-iframe="false" use-popup="false">
+                <display-names>
+                    <display-name locale="ja">認可</display-name>
+                    <display-name locale="en">Authorization</display-name>
+                    <display-name locale="zh_CN">许可</display-name>
+                </display-names>
+            </menu-item>
+            <menu-item menu-id="tenant_menu_settings_gn-pc" sort-number="1" type="item" url="tenant/menu/settings" method="get" use-iframe="false" use-popup="false">
+                <display-names>
+                    <display-name locale="ja">メニュー</display-name>
+                    <display-name locale="en">Menu</display-name>
+                    <display-name locale="zh_CN">菜单</display-name>
+                </display-names>
+            </menu-item>
+            <menu-item menu-id="tenant_menu_by_user_settings_gn-pc" sort-number="2" type="item" url="tenant/menu/by_user/authz/settings" method="get" use-iframe="false" use-popup="false" icon-32="im_tenant_im_menuByUser_32">
+                <display-names>
+                    <display-name locale="ja">ユーザ別メニュー権限</display-name>
+                    <display-name locale="en">The menu privilege by users</display-name>
+                    <display-name locale="zh_CN">以用户为单位的菜单的权限</display-name>
+                </display-names>
+            </menu-item>
+            <menu-item menu-id="tenant_role_settings_gn-pc" sort-number="2" type="item" url="tenant/role/role_search_list" method="get" use-iframe="false" use-popup="false">
+                <display-names>
+                    <display-name locale="ja">ロール</display-name>
+                    <display-name locale="en">Role</display-name>
+                    <display-name locale="zh_CN">身份</display-name>
+                </display-names>
+            </menu-item>
+            <menu-item menu-id="tenant_calendar_settings_gn-pc" sort-number="3" type="item" url="tenant/calendar/settings" method="get" use-iframe="false" use-popup="false">
+                <display-names>
+                    <display-name locale="ja">カレンダーメンテナンス</display-name>
+                    <display-name locale="en">Calendar Maintenance</display-name>
+                    <display-name locale="zh_CN">日历主表维护</display-name>
+                </display-names>
+            </menu-item>
+            <menu-item menu-id="tenant_information_gn-pc" sort-number="4" type="folder" method="get" use-iframe="false" use-popup="false">
+                <display-names>
+                    <display-name locale="ja">テナント情報</display-name>
+                    <display-name locale="en">Tenant Information</display-name>
+                    <display-name locale="zh_CN">Tenant信息</display-name>
+                </display-names>
+                <menu-item menu-id="tenant_settings_calendar_info_gn-pc" sort-number="0" type="item" url="tenant/settings/calendar" method="get" use-iframe="false" use-popup="false">
+                    <display-names>
+                        <display-name locale="ja">カレンダー</display-name>
+                        <display-name locale="en">Calendar</display-name>
+                        <display-name locale="zh_CN">日历</display-name>
+                    </display-names>
+                </menu-item>
+                <menu-item menu-id="tenant_settings_time_zone_gn-pc" sort-number="1" type="item" url="tenant/settings/time_zone" method="get" use-iframe="false" use-popup="false">
+                    <display-names>
+                        <display-name locale="ja">タイムゾーン</display-name>
+                        <display-name locale="en">Timezone</display-name>
+                        <display-name locale="zh_CN">时区</display-name>
+                    </display-names>
+                </menu-item>
+                <menu-item menu-id="tenant_settings_dtf_gn-pc" sort-number="2" type="item" url="tenant/settings/date_and_time_display_format" method="get" use-iframe="false" use-popup="false">
+                    <display-names>
+                        <display-name locale="ja">日付と時刻の形式</display-name>
+                        <display-name locale="en">Date and Time format</display-name>
+                        <display-name locale="zh_CN">日期与时刻的形式</display-name>
+                    </display-names>
+                </menu-item>
+                <menu-item menu-id="tenant_settings_theme_gn-pc" sort-number="3" type="item" url="tenant/settings/theme/" method="get" use-iframe="false" use-popup="false">
+                    <display-names>
+                        <display-name locale="ja">テーマ</display-name>
+                        <display-name locale="en">Theme</display-name>
+                        <display-name locale="zh_CN">主题</display-name>
+                    </display-names>
+                </menu-item>
+                <menu-item menu-id="tenant_settings_account_license_gn-pc" sort-number="4" type="item" url="tenant/settings/account_license" method="get" use-iframe="false" use-popup="false">
+                    <display-names>
+                        <display-name locale="ja">アカウントライセンス</display-name>
+                        <display-name locale="en">Account license</display-name>
+                        <display-name locale="zh_CN">帐号许可证</display-name>
+                    </display-names>
+                </menu-item>
+                <menu-item menu-id="tenant_settings_account_lock_gn-pc" sort-number="5" type="item" url="tenant/settings/account_lock" method="get" use-iframe="false" use-popup="false">
+                    <display-names>
+                        <display-name locale="ja">アカウントロック</display-name>
+                        <display-name locale="en">Account lock</display-name>
+                        <display-name locale="zh_CN">帐号锁定</display-name>
+                    </display-names>
+                </menu-item>
+                <menu-item menu-id="tenant_settings_application_license_gn-pc" sort-number="6" type="item" url="tenant/settings/application_license" method="get" use-iframe="false" use-popup="false">
+                    <display-names>
+                        <display-name locale="ja">アプリケーションライセンス</display-name>
+                        <display-name locale="en">Application license</display-name>
+                        <display-name locale="zh_CN">应用程序许可证</display-name>
+                    </display-names>
+                </menu-item>
+                <menu-item menu-id="tenant_settings_home_url_gn-pc" sort-number="7" type="item" url="tenant/settings/home_url" method="get" use-iframe="false" use-popup="false">
+                    <display-names>
+                        <display-name locale="ja">ホームURL</display-name>
+                        <display-name locale="en">Home URL</display-name>
+                        <display-name locale="zh_CN">主页URL</display-name>
+                    </display-names>
+                </menu-item>
+                <menu-item menu-id="tenant_settings_mail_address_gn-pc" sort-number="8" type="item" url="tenant/settings/mail_address" method="get" use-iframe="false" use-popup="false">
+                    <display-names>
+                        <display-name locale="ja">メールアドレス</display-name>
+                        <display-name locale="en">Mail Address</display-name>
+                        <display-name locale="zh_CN">邮件地址</display-name>
+                    </display-names>
+                </menu-item>
+                <menu-item menu-id="tenant_settings_password_reminder_gn-pc" sort-number="9" type="item" url="tenant/settings/password/reminder" method="get" use-iframe="false" use-popup="false">
+                    <display-names>
+                        <display-name locale="ja">パスワードリマインダ設定</display-name>
+                        <display-name locale="en">Password Reminder Setting</display-name>
+                        <display-name locale="zh_CN">密码提示设定</display-name>
+                    </display-names>
+                </menu-item>
+                <menu-item menu-id="tenant_settings_announce_info_gn-pc" sort-number="10" type="item" url="tenant/settings/announce" method="get" use-iframe="false" use-popup="false">
+                    <display-names>
+                        <display-name locale="ja">アナウンス設定</display-name>
+                        <display-name locale="en">Announce settings</display-name>
+                        <display-name locale="zh_CN">Announce设定</display-name>
+                    </display-names>
+                </menu-item>
+                <menu-item menu-id="tenant_settings_menu_display_gn-pc" sort-number="11" type="item" url="tenant/settings/menu_display" method="get" use-iframe="false" use-popup="false">
+                    <display-names>
+                        <display-name locale="ja">メニュー表示</display-name>
+                        <display-name locale="en">Menu Display</display-name>
+                        <display-name locale="zh_CN">菜单显示</display-name>
+                    </display-names>
+                </menu-item>
+                <menu-item menu-id="tenant_settings_number_format_gn-pc" sort-number="13" type="item" url="tenant/settings/number_format" method="get" use-iframe="false" use-popup="false">
+                    <display-names>
+                        <display-name locale="ja">数値形式</display-name>
+                        <display-name locale="en">Number Format</display-name>
+                        <display-name locale="zh_CN">数值形式</display-name>
+                    </display-names>
+                </menu-item>
+                <menu-item menu-id="tenant_settings_safe_url_gn-pc" sort-number="30" type="item" url="tenant/settings/safe_url/safe_url_search_list" method="get" use-iframe="false" use-popup="false">
+                    <display-names>
+                        <display-name locale="ja">セーフURL</display-name>
+                        <display-name locale="en">Safe URL</display-name>
+                        <display-name locale="zh_CN">安全URL</display-name>
+                    </display-names>
+                </menu-item>
+            </menu-item>
+            <menu-item menu-id="imm_gn-pc" sort-number="5" type="folder" method="get" use-iframe="false" use-popup="false">
+                <display-names>
+                    <display-name locale="ja">共通マスタ</display-name>
+                    <display-name locale="en">Common master</display-name>
+                    <display-name locale="zh_CN">通用主表</display-name>
+                </display-names>
+                <menu-item menu-id="imm-user_gn-pc" sort-number="0" type="item" url="master/maintenance/call/user" method="get" use-iframe="true" use-popup="false">
+                    <display-names>
+                        <display-name locale="ja">ユーザ</display-name>
+                        <display-name locale="en">User</display-name>
+                        <display-name locale="zh_CN">用户</display-name>
+                    </display-names>
+                </menu-item>
+                <menu-item menu-id="imm-publicgroup_gn-pc" sort-number="1" type="item" url="master/maintenance/call/publicgroup" method="get" use-iframe="true" use-popup="false">
+                    <display-names>
+                        <display-name locale="ja">パブリックグループ</display-name>
+                        <display-name locale="en">Public group</display-name>
+                        <display-name locale="zh_CN">公共组别</display-name>
+                    </display-names>
+                </menu-item>
+                <menu-item menu-id="imm-category_gn-pc" sort-number="2" type="item" url="master/maintenance/call/category" method="get" use-iframe="true" use-popup="false">
+                    <display-names>
+                        <display-name locale="ja">分類</display-name>
+                        <display-name locale="en">Category</display-name>
+                        <display-name locale="zh_CN">分类</display-name>
+                    </display-names>
+                </menu-item>
+                <menu-item menu-id="imm-company_gn-pc" sort-number="3" type="item" url="im_master/maintenance/company/company_list" method="get" use-iframe="false" use-popup="false">
+                    <display-names>
+                        <display-name locale="ja">会社</display-name>
+                        <display-name locale="en">Company</display-name>
+                        <display-name locale="zh_CN">公司</display-name>
+                    </display-names>
+                </menu-item>
+                <menu-item menu-id="imm-companygroup_gn-pc" sort-number="4" type="item" url="master/maintenance/call/companygroup" method="get" use-iframe="true" use-popup="false">
+                    <display-names>
+                        <display-name locale="ja">会社グループ</display-name>
+                        <display-name locale="en">Company group</display-name>
+                        <display-name locale="zh_CN">集团公司</display-name>
+                    </display-names>
+                </menu-item>
+                <menu-item menu-id="imm-organization_gn-pc" sort-number="5" type="item" url="master/maintenance/call/organization" method="get" use-iframe="true" use-popup="false">
+                    <display-names>
+                        <display-name locale="ja">組織</display-name>
+                        <display-name locale="en">Department</display-name>
+                        <display-name locale="zh_CN">部门</display-name>
+                    </display-names>
+                </menu-item>
+                <menu-item menu-id="imm-customer_gn-pc" sort-number="6" type="item" url="master/maintenance/call/customer" method="get" use-iframe="true" use-popup="false">
+                    <display-names>
+                        <display-name locale="ja">法人・取引先</display-name>
+                        <display-name locale="en">Corporation / Customer</display-name>
+                        <display-name locale="zh_CN">法人 / 交易户</display-name>
+                    </display-names>
+                </menu-item>
+                <menu-item menu-id="imm-corporationgroup_gn-pc" sort-number="7" type="item" url="master/maintenance/call/corporationgroup" method="get" use-iframe="true" use-popup="false">
+                    <display-names>
+                        <display-name locale="ja">法人グループ</display-name>
+                        <display-name locale="en">Corporation group</display-name>
+                        <display-name locale="zh_CN">法人组别</display-name>
+                    </display-names>
+                </menu-item>
+                <menu-item menu-id="imm-item_gn-pc" sort-number="8" type="item" url="master/maintenance/call/item" method="get" use-iframe="true" use-popup="false">
+                    <display-names>
+                        <display-name locale="ja">品目カテゴリ・品目</display-name>
+                        <display-name locale="en">Item category / Item</display-name>
+                        <display-name locale="zh_CN">品种分类 / 品种</display-name>
+                    </display-names>
+                </menu-item>
+                <menu-item menu-id="imm-currency_gn-pc" sort-number="9" type="item" url="master/maintenance/call/currency" method="get" use-iframe="true" use-popup="false">
+                    <display-names>
+                        <display-name locale="ja">通貨</display-name>
+                        <display-name locale="en">Currency</display-name>
+                        <display-name locale="zh_CN">货币</display-name>
+                    </display-names>
+                </menu-item>
+                <menu-item menu-id="imm-companycategory_gn-pc" sort-number="10" type="item" url="master/maintenance/call/companycategory" method="get" use-iframe="true" use-popup="false">
+                    <display-names>
+                        <display-name locale="ja">組織分類</display-name>
+                        <display-name locale="en">Department category</display-name>
+                        <display-name locale="zh_CN">组织分类</display-name>
+                    </display-names>
+                </menu-item>
+            </menu-item>
+            <menu-item menu-id="portal_mg_gn-pc" sort-number="7" type="folder" method="get" use-iframe="false" use-popup="false">
+                <display-names>
+                    <display-name locale="ja">ポータル管理</display-name>
+                    <display-name locale="en">Portal Management</display-name>
+                    <display-name locale="zh_CN">门户管理</display-name>
+                </display-names>
+                <menu-item menu-id="portal_portlet_gn-pc" sort-number="0" type="item" url="portal/portlet/page/index" method="get" use-iframe="true" use-popup="false">
+                    <display-names>
+                        <display-name locale="ja">ポートレット一覧</display-name>
+                        <display-name locale="en">Portlet List</display-name>
+                        <display-name locale="zh_CN">门户组件一览</display-name>
+                    </display-names>
+                </menu-item>
+                <menu-item menu-id="portal_group-portal_gn-pc" sort-number="1" type="item" url="portal/group/edit" method="get" use-iframe="false" use-popup="false">
+                    <display-names>
+                        <display-name locale="ja">グループポータル管理</display-name>
+                        <display-name locale="en">Group portal management</display-name>
+                        <display-name locale="zh_CN">组门户管理</display-name>
+                    </display-names>
+                </menu-item>
+                <menu-item menu-id="portal_imp-exp_gn-pc" sort-number="2" type="item" url="portal/portal/io" method="get" use-iframe="true" use-popup="false">
+                    <display-names>
+                        <display-name locale="ja">インポート・エクスポート</display-name>
+                        <display-name locale="en">Import/Export</display-name>
+                        <display-name locale="zh_CN">导入/导出</display-name>
+                    </display-names>
+                </menu-item>
+                <menu-item menu-id="login_portal_setting_gn-pc" sort-number="10" type="item" url="tenant/settings/login_portal" method="get" use-iframe="false" use-popup="false">
+                    <display-names>
+                        <display-name locale="ja">ログイン画面表示設定</display-name>
+                        <display-name locale="en">Login screen display setting</display-name>
+                        <display-name locale="zh_CN">登录页面显示设置</display-name>
+                    </display-names>
+                </menu-item>
+            </menu-item>
+            <menu-item menu-id="tm_gn-pc" sort-number="8" type="folder" url="empty" method="get" use-iframe="false" use-popup="false">
+                <display-names>
+                    <display-name locale="ja">TableMaintenance</display-name>
+                    <display-name locale="en">TableMaintenance</display-name>
+                    <display-name locale="zh_CN">TableMaintenance</display-name>
+                </display-names>
+                <menu-item menu-id="tm_tablelist_gn-pc" sort-number="0" type="item" url="tablemaintenance/table_list" method="get" use-iframe="false" use-popup="false">
+                    <display-names>
+                        <display-name locale="ja">テーブル一覧</display-name>
+                        <display-name locale="en">Table list</display-name>
+                        <display-name locale="zh_CN">表一览</display-name>
+                    </display-names>
+                </menu-item>
+                <menu-item menu-id="tm_export_gn-pc" sort-number="1" type="item" url="tablemaintenance/table_export" method="get" use-iframe="false" use-popup="false">
+                    <display-names>
+                        <display-name locale="ja">テーブル・エクスポート</display-name>
+                        <display-name locale="en">Table Export</display-name>
+                        <display-name locale="zh_CN">表导出</display-name>
+                    </display-names>
+                </menu-item>
+                <menu-item menu-id="tm_import_gn-pc" sort-number="2" type="item" url="tablemaintenance/table_import" method="get" use-iframe="false" use-popup="false">
+                    <display-names>
+                        <display-name locale="ja">テーブル・インポート</display-name>
+                        <display-name locale="en">Table Import</display-name>
+                        <display-name locale="zh_CN">表导入</display-name>
+                    </display-names>
+                </menu-item>
+                <menu-item menu-id="tm_tableinfo_gn-pc" sort-number="3" type="item" url="vc_tm_common/table_info" method="get" use-iframe="false" use-popup="false">
+                    <description>データベース上のテーブル名やフィールド名のキャプションを登録します</description>
+                    <display-names>
+                        <display-name locale="ja">テーブル・キャプション登録</display-name>
+                        <display-name locale="en">Table/Caption registration</display-name>
+                        <display-name locale="zh_CN">表・字段描述登记</display-name>
+                    </display-names>
+                </menu-item>
+                <menu-item menu-id="tm_tablelist_user_gn-pc" sort-number="4" type="item" url="tablemaintenance/table_list_user" method="get" use-iframe="false" use-popup="false">
+                    <description>一般ユーザ向けのテーブル一覧です。認可設定画面の「TableMaintenance/テーブル単位の認可一覧」の直下の、編集を許可されているテーブルだけを表示します。</description>
+                    <display-names>
+                        <display-name locale="ja">テーブル一覧</display-name>
+                        <display-name locale="en">Table list</display-name>
+                        <display-name locale="zh_CN">表一览</display-name>
+                    </display-names>
+                </menu-item>
+            </menu-item>
+            <menu-item menu-id="tenant_job_maintenance_gn-pc" sort-number="12" type="folder" method="get" use-iframe="false" use-popup="false">
+                <display-names>
+                    <display-name locale="ja">ジョブ管理</display-name>
+                    <display-name locale="en">Job maintenance</display-name>
+                    <display-name locale="zh_CN">Job管理</display-name>
+                </display-names>
+                <menu-item menu-id="tenant_job_settings_gn-pc" sort-number="0" type="item" url="tenant/job_scheduler/job_maintenance" method="get" use-iframe="false" use-popup="false">
+                    <display-names>
+                        <display-name locale="ja">ジョブ設定</display-name>
+                        <display-name locale="en">Job settings</display-name>
+                        <display-name locale="zh_CN">Job设定</display-name>
+                    </display-names>
+                </menu-item>
+                <menu-item menu-id="tenant_jobnet_settings_gn-pc" sort-number="1" type="item" url="tenant/job_scheduler/jobnet_maintenance" method="get" use-iframe="false" use-popup="false">
+                    <display-names>
+                        <display-name locale="ja">ジョブネット設定</display-name>
+                        <display-name locale="en">Jobnet settings</display-name>
+                        <display-name locale="zh_CN">Jobnet设定</display-name>
+                    </display-names>
+                </menu-item>
+                <menu-item menu-id="tenant_jobnet_monitor_gn-pc" sort-number="2" type="item" url="tenant/job_scheduler/jobnet_monitor_search_list" method="get" use-iframe="false" use-popup="false">
+                    <display-names>
+                        <display-name locale="ja">ジョブネットモニタ</display-name>
+                        <display-name locale="en">Jobnet monitor</display-name>
+                        <display-name locale="zh_CN">Jobnet监视</display-name>
+                    </display-names>
+                </menu-item>
+            </menu-item>
+            <menu-item menu-id="tenant_storage_maintenance_gn-pc" sort-number="12" type="item" url="tenant/maintenance/storage/view" method="get" use-iframe="false" use-popup="false">
+                <display-names>
+                    <display-name locale="ja">ファイル操作</display-name>
+                    <display-name locale="en">File operation</display-name>
+                    <display-name locale="zh_CN">文件操作</display-name>
+                </display-names>
+            </menu-item>
+            <menu-item menu-id="tenant_database_maintenance_gn-pc" sort-number="13" type="item" url="tenant/maintenance/database" method="get" use-iframe="false" use-popup="false">
+                <display-names>
+                    <display-name locale="ja">データベース操作</display-name>
+                    <display-name locale="en">Database operation</display-name>
+                    <display-name locale="zh_CN">数据库操作</display-name>
+                </display-names>
+            </menu-item>
+            <menu-item menu-id="tenant_settings_icon_gn-pc" sort-number="20" type="item" url="tenant/settings/icon/icon_list" method="get" use-iframe="false" use-popup="false">
+                <display-names>
+                    <display-name locale="ja">アイコン管理</display-name>
+                    <display-name locale="en">Manage Icon</display-name>
+                    <display-name locale="zh_CN">图标管理</display-name>
+                </display-names>
+            </menu-item>
+        </menu-item>
+    </menu-group-data>
+    <menu-group-data id="8fscg0jafwlhf">
+        <category id="im_global_nav_pc">
+        </category>
+        <menu-item menu-id="8fscg0jafwlhf" sort-number="7" type="folder" method="get" use-iframe="false" use-popup="false">
+            <display-names>
+                <display-name locale="ja">Formaアプリ</display-name>
+                <display-name locale="en">Forma application</display-name>
+                <display-name locale="zh_CN">应用程序一览</display-name>
+            </display-names>
+            <menu-item menu-id="8fscgi7l5ww2e" sort-number="0" type="item" url="forma/normal/view/list_view/test_kawada_customer_appl" method="get" use-iframe="false" use-popup="false">
+                <display-names>
+                    <display-name locale="ja">顧客管理99</display-name>
+                    <display-name locale="en">顧客管理99</display-name>
+                    <display-name locale="zh_CN">顧客管理99</display-name>
+                </display-names>
+            </menu-item>
+            <menu-item menu-id="8gwzhc079pqdy" sort-number="0" type="item" url="forma/normal/view/regist_application_view/sf_nimstd_apl013" method="get" use-iframe="false" use-popup="false">
+                <display-names>
+                    <display-name locale="ja">sf_nimstd_apl013</display-name>
+                    <display-name locale="en">sf_nimstd_apl013</display-name>
+                    <display-name locale="zh_CN">sf_nimstd_apl013</display-name>
+                </display-names>
+            </menu-item>
+            <menu-item menu-id="8fscgiadbww4w" sort-number="1" type="item" url="forma/normal/view/regist_application_view/test_kawada_customer_appl" method="get" use-iframe="false" use-popup="false">
+                <display-names>
+                    <display-name locale="ja">顧客管理99_登録</display-name>
+                    <display-name locale="en">顧客管理99_登録</display-name>
+                    <display-name locale="zh_CN">顧客管理99_登録</display-name>
+                </display-names>
+            </menu-item>
+            <menu-item menu-id="8fscg0jd8wlhi" sort-number="2" type="item" url="forma/imw/recycle/applied_list" method="get" use-iframe="false" use-popup="false">
+                <display-names>
+                    <display-name locale="ja">WF申請書再利用</display-name>
+                    <display-name locale="en">WF application reuse</display-name>
+                    <display-name locale="zh_CN">WF申请书再次利用</display-name>
+                </display-names>
+            </menu-item>
+        </menu-item>
+    </menu-group-data>
+    <menu-group-data id="8fx3xkt9nq7qbm0">
+        <category id="im_global_nav_pc">
+        </category>
+        <menu-item menu-id="8fx3xkt9nq7qbm0" sort-number="8" type="folder" method="get" use-iframe="false" use-popup="false">
+            <display-names>
+                <display-name locale="ja">納期調整依頼書</display-name>
+                <display-name locale="en">納期調整依頼書</display-name>
+                <display-name locale="zh_CN">納期調整依頼書</display-name>
+            </display-names>
+            <menu-item menu-id="8fx3xl5ftq7s7" sort-number="0" type="item" url="forma/normal/view/regist_application_view/dp_nim051_apl101" method="get" use-iframe="false" use-popup="false">
+                <display-names>
+                    <display-name locale="ja">状況確認検索</display-name>
+                    <display-name locale="en">状況確認検索</display-name>
+                    <display-name locale="zh_CN">状況確認検索</display-name>
+                </display-names>
+            </menu-item>
+            <menu-item menu-id="8fx3xl8ckq7v4" sort-number="1" type="item" url="forma/normal/view/regist_application_view/dp_nim051_apl001" method="get" use-iframe="false" use-popup="false">
+                <display-names>
+                    <display-name locale="ja">納期調整依頼書</display-name>
+                    <display-name locale="en">納期調整依頼書</display-name>
+                    <display-name locale="zh_CN">納期調整依頼書</display-name>
+                </display-names>
+            </menu-item>
+            <menu-item menu-id="8fx3xlardq7xn" sort-number="2" type="item" url="forma/normal/view/regist_application_view/dp_nim051_apl102" method="get" use-iframe="false" use-popup="false">
+                <display-names>
+                    <display-name locale="ja">理由マスタ登録</display-name>
+                    <display-name locale="en">理由マスタ登録</display-name>
+                    <display-name locale="zh_CN">理由マスタ登録</display-name>
+                </display-names>
+            </menu-item>
+        </menu-item>
+    </menu-group-data>
+</root>
