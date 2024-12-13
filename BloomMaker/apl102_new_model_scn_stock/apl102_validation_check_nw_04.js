@@ -1,7 +1,7 @@
 /*
----------------
+----------------
 -- apl102_validation_check_nw_04
----------------
+----------------
 */
 /**
  * run.
@@ -79,29 +79,69 @@ let utils = {
     var regex = new RegExp(/^([\u3040-\u30ff\u3400-\u4dbf\u4e00-\u9fff\uf900-\ufaff\uff66-\uff9f\uff10-\uff19])+$/);
     return regex.test(ch);
   },
-  isDateValid: function (dateStr) {
-    var date = new Date(dateStr);
-    var parsedDay = date.getDate().toString().split('.')[0];
-    var parsedMonth = (date.getMonth() + 1).toString().split('.')[0];
-    var parsedYear = date.getFullYear().toString().split('.')[0];
-    if (parsedDay.length === 1) {
-      parsedDay = '0' + parsedDay;
+  isDateValid: function (dateString) {
+    var formatRegex = /^\d{4}\/\d{2}\/\d{2} \d{2}:\d{2}:\d{2}$/;
+    if (!formatRegex.test(dateString)) {
+      return false;
     }
-    if (parsedMonth.length === 1) {
-      parsedMonth = '0' + parsedMonth;
+    var parts = dateString.split(' ');
+    var datePart = parts[0];
+    var timePart = parts[1];
+    var dateComponents = datePart.split('/');
+    var timeComponents = timePart.split(':');
+    var year = parseInt(dateComponents[0], 10);
+    var month = parseInt(dateComponents[1], 10);
+    var day = parseInt(dateComponents[2], 10);
+    var hours = parseInt(timeComponents[0], 10);
+    var minutes = parseInt(timeComponents[1], 10);
+    var seconds = parseInt(timeComponents[2], 10);
+    if (month < 1 || month > 12) {
+      return false;
     }
-    var inputDay = dateStr.split('/')[2];
-    var inputMonth = dateStr.split('/')[1];
-    var inputYear = dateStr.split('/')[0];
-    return parsedDay === inputDay && parsedMonth === inputMonth && parsedYear === inputYear;
+    // Validate day based on the month and year (accounting for leap years)
+    var daysInMonth = [
+      31, // January
+      year % 4 === 0 && (year % 100 !== 0 || year % 400 === 0) ? 29 : 28, // February
+      31, // March
+      30, // April
+      31, // May
+      30, // June
+      31, // July
+      31, // August
+      30, // September
+      31, // October
+      30, // November
+      31, // December
+    ];
+    if (day < 1 || day > daysInMonth[month - 1]) {
+      return false;
+    }
+    if (hours < 0 || hours > 23) {
+      return false;
+    }
+    if (minutes < 0 || minutes > 59) {
+      return false;
+    }
+    if (seconds < 0 || seconds > 59) {
+      return false;
+    }
+    return true;
   },
   validateString: function (str) {
     var regex = /^[a-zA-Z0-9]+$/;
     return regex.test(str);
   },
   validateNumber: function (num) {
+    if (!String.prototype.replaceAll) {
+      String.prototype.replaceAll = function (search, replacement) {
+        var target = this;
+        return target.split(search).join(replacement);
+      };
+    }
+    var parsedNum = num.replaceAll(',', '');
+    var number = parsedNum.split('.')[0];
     var regex = /^[0-9]+$/;
-    return regex.test(num);
+    return regex.test(number);
   },
   groupByError: function (col, group, val) {
     group.error = 'true';
@@ -118,4 +158,3 @@ let utils = {
     }
   },
 };
-
