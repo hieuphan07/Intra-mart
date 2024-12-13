@@ -140,8 +140,9 @@ let utils = {
     }
     var parsedNum = num.replaceAll(',', '');
     var number = parsedNum.split('.')[0];
+    var decimal = parsedNum.split('.')[1];
     var regex = /^[0-9]+$/;
-    return regex.test(number);
+    return regex.test(number) && regex.test(decimal);
   },
   groupByError: function (col, group, val) {
     group.error = 'true';
@@ -158,3 +159,4 @@ let utils = {
     }
   },
 };
+
