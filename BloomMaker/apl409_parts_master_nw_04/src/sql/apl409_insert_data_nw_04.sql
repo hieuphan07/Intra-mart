@@ -1,0 +1,54 @@
+----------------
+-- apl409_insert_data_nw_04
+----------------
+
+INSERT INTO APL409_PARTS_MASTER_NW_04 (
+    no, 
+    partNumber, 
+    modelCdAnalysis, 
+    ovrallRank, 
+    suppProdRank, 
+    pmTargtTpDom, 
+    pmTargtTpOvrs, 
+    partCategory, 
+    ovPrdctFinYmd, 
+    ovSuppFinYmd, 
+    dmPrdctFinYmd, 
+    dmInvFinSch, 
+    dmNewLMtnStr, 
+    dmInvFinDec, 
+    dmSuppFinYmd, 
+    dmSuppFinFlg, 
+    emphaSontPartSate, 
+    checkNo, 
+    supplyPartNm, 
+    newMdlInvtPic, 
+    curInvtPic, 
+    domesDlvLctTp, 
+    ovseaDlvLctTp
+)
+VALUES (
+    /*p_no*/'',
+    /*p_partNumber*/'',
+    /*p_modelCdAnalysis*/'',
+    /*p_ovrallRank*/'',
+    /*p_suppProdRank*/'',
+    /*p_pmTargtTpDom*/'',
+    /*p_pmTargtTpOvrs*/'',
+    /*p_partCategory*/'',
+    TO_DATE(/*p_ovPrdctFinYmd*/'','YYYY-MM-DD'),
+    TO_DATE(/*p_ovSuppFinYmd*/'','YYYY-MM-DD'),
+    TO_DATE(/*p_dmPrdctFinYmd*/'','YYYY-MM-DD'),
+    TO_DATE(/*p_dmInvFinSch*/'','YYYY-MM-DD'),
+    TO_DATE(/*p_dmNewLMtnStr*/'','YYYY-MM-DD'),
+    TO_DATE(/*p_dmInvFinDec*/'','YYYY-MM-DD'),
+    /*p_dmSuppFinYmd*/'',
+    /*p_dmSuppFinFlg*/'',
+    /*p_emphaSontPartSate*/'',
+    /*p_checkNo*/'',
+    /*p_supplyPartNm*/'',
+    /*p_newMdlInvtPic*/'',
+    /*p_curInvtPic*/'',
+    /*p_domesDlvLctTp*/'',
+    /*p_ovseaDlvLctTp*/''
+);
