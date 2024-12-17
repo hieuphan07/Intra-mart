@@ -1,0 +1,49 @@
+---------------
+-- bm_add_inventory_supply_nw_04
+---------------
+INSERT INTO bm_inventory_supply_nw_04
+(
+  insert_id, 
+  row_no, 
+  stock, 
+  company, 
+  dept, 
+  boxregistno, 
+  modelinfo, 
+  branch, 
+  boxstartdt, 
+  boxenddt, 
+  registqnt, 
+  rewdomesticleads, 
+  remainqnt, 
+  detailtype, 
+  status, 
+  newpic, 
+  timingtype, 
+  timing, 
+  timingspecification, 
+  description
+)
+VALUES
+( 
+  /*insert_id*/'', 
+  /*row_no*/'', 
+  /*stock*/'', 
+  /*company*/'', 
+  /*dept*/'', 
+  /*boxregistno*/'', 
+  /*modelinfo*/'', 
+  /*branch*/'', 
+  /*boxstartdt*/'', 
+  /*boxenddt*/'', 
+  /*registqnt*/'', 
+  /*rewdomesticleads*/'', 
+  /*remainqnt*/'', 
+  /*detailtype*/'', 
+  /*status*/'', 
+  /*newpic*/'', 
+  /*timingtype*/'', 
+  /*timing*/'', 
+  /*timingspecification*/'', 
+  /*description*/''
+)
