@@ -132,6 +132,7 @@ let utils = {
     return regex.test(str);
   },
   validateNumber: function (num) {
+    // Mimic method replaceAll()
     if (!String.prototype.replaceAll) {
       String.prototype.replaceAll = function (search, replacement) {
         var target = this;
@@ -159,4 +160,3 @@ let utils = {
     }
   },
 };
-
