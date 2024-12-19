@@ -25,37 +25,37 @@ function run(input) {
     error: "false",
   };
   // Check validation
-  if (utils.countBytes(input.p_partNum) === 0) {
+  if (utils.isValidBytes(input.p_partNum) === 0) {
     utils.groupByError("partNum", response, ERROR_MSG.empty);
   }
-  if (utils.countBytes(input.p_partNum) > 12) {
+  if (utils.isValidBytes(input.p_partNum) > 12) {
     utils.groupByError("partNum", response, ERROR_MSG.byteTwelve);
   }
-  if (!utils.validateString(input.p_partNum)) {
+  if (!utils.isValidString(input.p_partNum)) {
     utils.groupByError("partNum", response, ERROR_MSG.azNumberCharacterOnly);
   }
-  if (utils.countBytes(input.p_modelUser) > 4000) {
+  if (utils.isValidBytes(input.p_modelUser) > 4000) {
     utils.groupByError("modelUser", response, ERROR_MSG.byteFourThousands);
   }
-  if (utils.countBytes(input.p_rank) > 10) {
+  if (utils.isValidBytes(input.p_rank) > 10) {
     utils.groupByError("rank", response, ERROR_MSG.byteTen);
   }
-  if (!utils.validateNumber(input.p_rank)) {
+  if (!utils.isValidNumber(input.p_rank)) {
     utils.groupByError("rank", response, ERROR_MSG.numberCharacterOnly);
   }
-  if (utils.countBytes(input.p_quantity) > 10) {
+  if (utils.isValidBytes(input.p_quantity) > 10) {
     utils.groupByError("quantity", response, ERROR_MSG.byteTen);
   }
-  if (!utils.validateNumber(input.p_quantity)) {
+  if (!utils.isValidNumber(input.p_quantity)) {
     utils.groupByError("quantity", response, ERROR_MSG.numberCharacterOnly);
   }
-  if (!utils.isDateValid(input.p_boxStartDt)) {
+  if (!utils.isValidDate(input.p_boxStartDt)) {
     utils.groupByError("boxStartDt", response, ERROR_MSG.dateFormat);
   }
-  if (!utils.isDateValid(input.p_boxEndDt)) {
+  if (!utils.isValidDate(input.p_boxEndDt)) {
     utils.groupByError("boxEndDt", response, ERROR_MSG.dateFormat);
   }
-  if (utils.countBytes(input.p_boxType) > 4000) {
+  if (utils.isValidBytes(input.p_boxType) > 4000) {
     utils.groupByError("boxType", response, ERROR_MSG.byteFourThousands);
   }
 
@@ -73,20 +73,23 @@ let utils = {
       return true;
     }
   },
-  countBytes: function (text) {
+
+  isValidBytes: function (text) {
     if (utils.isEmpty(text)) {
       return 0;
     }
     let s = unescape(encodeURIComponent(text));
     return s.length;
   },
-  isJapanese: function (ch) {
+
+  isValidJapanese: function (text) {
     var regex = new RegExp(
       /^([\u3040-\u30ff\u3400-\u4dbf\u4e00-\u9fff\uf900-\ufaff\uff66-\uff9f\uff10-\uff19])+$/
     );
-    return regex.test(ch);
+    return regex.test(text);
   },
-  isDateValid: function (dateString) {
+
+  isValidDate: function (dateString) {
     var formatRegex = /^\d{4}\/\d{2}\/\d{2} \d{2}:\d{2}:\d{2}$/;
     if (!formatRegex.test(dateString)) {
       return false;
@@ -134,24 +137,34 @@ let utils = {
     }
     return true;
   },
-  validateString: function (str) {
+
+  isValidString: function (text) {
     var regex = /^[a-zA-Z0-9]+$/;
-    return regex.test(str);
+    return regex.test(text);
   },
-  validateNumber: function (num) {
-    // Mimic method replaceAll()
+
+  isValidNumber: function (numberString) {
     if (!String.prototype.replaceAll) {
       String.prototype.replaceAll = function (search, replacement) {
         var target = this;
         return target.split(search).join(replacement);
       };
     }
-    var parsedNum = num.replaceAll(",", "");
-    var number = parsedNum.split(".")[0];
-    var decimal = parsedNum.split(".")[1];
     var regex = /^[0-9]+$/;
-    return regex.test(number) && regex.test(decimal);
+    var parsedNum = numberString.replaceAll(",", "");
+    var parts = parsedNum.split(".");
+    if (parts.length > 2) {
+      return false;
+    }
+    if (!regex.test(parts[0])) {
+      return false;
+    }
+    if (parts.length === 2 && !regex.test(parts[1])) {
+      return false;
+    }
+    return true;
   },
+
   groupByError: function (col, group, val) {
     group.error = "true";
     if (!group[col]) {
