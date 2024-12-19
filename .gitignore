@@ -1,7 +1,5 @@
+# Node.js dependencies directories
 **/node_modules/
-/docker-images
-.DS_Store
-BloomMaker/**/node_modules/
-Forma/**/node_modules/
-BloomMaker/.DS_Store
-Forma/.DS_Store
+
+# macOS system files
+**/.DS_Store
