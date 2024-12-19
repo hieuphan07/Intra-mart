@@ -21,14 +21,14 @@
 
 Format: `<type>(<scope>): <subject>`
 
-    Types:
+Types:
 
-    - feat: New feature
-    - fix: Bug fix
-    - docs: Documentation changes
-    - style: Code formatting, missing semicolons, etc.
-    - refactor: Code changes that neither fix bugs nor add features
-    - test: Adding or modifying tests
-    - chore: Updating build tasks, package manager configs, etc.
+- `feat` New feature
+- `fix` Bug fix
+- `docs` Documentation changes
+- `style` Code formatting, missing semicolons, etc.
+- `refactor` Code changes that neither fix bugs nor add features
+- `test` Adding or modifying tests
+- `chore` Updating build tasks, package manager configs, etc.
 
-    Example Commit Messages: feat(apl102): implement stock calculation logic; docs(bloommaker): update API documentation
+Example Commit Messages: feat(apl102): implement stock calculation logic; docs(bloommaker): update API documentation
