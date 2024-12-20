@@ -8,6 +8,7 @@
     "test:integration": "jest tests/integration",
     "test:number": "jest tests/unit/validation/numberValidation.test.js",
     "lint": "eslint .",
+    "lint:check": "eslint src/apl102_scn_stock_nw_04",
     "format:check": "prettier --check .",
     "format": "prettier --write .",
     "start": "nodemon src/test/apl102_test.js"

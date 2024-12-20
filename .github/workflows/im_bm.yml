@@ -7,7 +7,7 @@ on:
       - develop
 
 jobs:
-  test:
+  build-and-test:
     runs-on: ubuntu-latest
 
     steps:
@@ -16,28 +16,55 @@ jobs:
 
       - name: Debug directory structure
         run: |
-          pwd
+          echo "Current directory: $(pwd)"
+          echo "Repository contents:"
           ls -la
-          ls -la bloommaker || echo "No bloommaker directory"
-          ls -la bloommaker/apl102_scn_stock_nw_04 || echo "No apl102_scn_stock_nw_04 directory"
+          echo "Full directory tree:"
+          tree || (apt-get update && apt-get install -y tree && tree)
+
+      - name: Find package.json
+        run: |
+          echo "Searching for package.json files:"
+          find . -name "package.json" -type f
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: "16"
           cache: "npm"
-          cache-dependency-path: "**/package.json"
+          cache-dependency-path: |
+            **/package.json
+            **/package-lock.json
 
-      - name: Install dependencies
-        working-directory: bloommaker/apl102_scn_stock_nw_04
+      - name: Navigate and Install
         run: |
-          if [ -f "package.json" ]; then
-            npm ci
-          else
-            echo "package.json not found"
+          # Find the package.json location
+          PACKAGE_JSON_PATH=$(find . -name "package.json" -type f | grep "bloommaker/apl102_scn_stock_nw_04" || echo "")
+
+          if [ -z "$PACKAGE_JSON_PATH" ]; then
+            echo "Error: Could not find package.json in the expected location"
             exit 1
           fi
 
+          # Navigate to the directory containing package.json
+          cd $(dirname "$PACKAGE_JSON_PATH")
+          echo "Current directory: $(pwd)"
+          echo "Directory contents:"
+          ls -la
+
+          # Install dependencies
+          npm ci
+
+      - name: Run ESLint
+        if: success()
+        run: |
+          PACKAGE_JSON_PATH=$(find . -name "package.json" -type f | grep "bloommaker/apl102_scn_stock_nw_04")
+          cd $(dirname "$PACKAGE_JSON_PATH")
+          npm run lint:check
+
       - name: Run tests
-        working-directory: bloommaker/apl102_scn_stock_nw_04
-        run: npm test
+        if: success()
+        run: |
+          PACKAGE_JSON_PATH=$(find . -name "package.json" -type f | grep "bloommaker/apl102_scn_stock_nw_04")
+          cd $(dirname "$PACKAGE_JSON_PATH")
+          npm test
