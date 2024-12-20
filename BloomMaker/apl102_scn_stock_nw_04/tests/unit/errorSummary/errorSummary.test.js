@@ -1,4 +1,4 @@
-const { run } = require("../../../src/js/apl102_error_summary_nw_04");
+const { run } = require("../../../src/ud/js/apl102_error_summary_nw_04");
 
 describe("Error Summary Tests", () => {
   test("Should return unique elements from arrays", () => {

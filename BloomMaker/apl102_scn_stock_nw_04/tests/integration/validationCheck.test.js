@@ -1,4 +1,4 @@
-const { run } = require("../../src/js/apl102_validation_check_nw_04");
+const { run } = require("../../src/ud/js/apl102_validation_check_nw_04");
 
 describe("Validation Check Integration Tests", () => {
   test("Valid input should return no errors", () => {

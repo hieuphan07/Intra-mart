@@ -10,7 +10,7 @@
  * @return {Object} task result.
  */
 function run(input) {
-  const response = {};
+  var response = {};
   response.error = utils.getErrorElement(input.p_error);
   response.partNum = utils.getUniqueElements(input.p_partNum);
   response.modelUser = utils.getUniqueElements(input.p_modelUser);
@@ -23,7 +23,7 @@ function run(input) {
   return response;
 }
 
-let utils = {
+var utils = {
   getUniqueElements: function (arr) {
     var uniqueElements = [];
     for (var j = 0; j < arr.length; j++) {
@@ -34,13 +34,13 @@ let utils = {
     return uniqueElements;
   },
   getErrorElement: function (arr) {
-    for (let i = 0; i < arr.length; i++) {
-      if (arr[i] === "true") {
-        return ["true"];
+    for (var i = 0; i < arr.length; i++) {
+      if (arr[i] === 'true') {
+        return ['true'];
       }
     }
-    return ["false"];
+    return ['false'];
   },
 };
 
-module.exports = { run };
+module.exports = { run: run };

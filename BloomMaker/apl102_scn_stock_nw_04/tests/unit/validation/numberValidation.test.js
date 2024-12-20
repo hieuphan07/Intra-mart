@@ -1,5 +1,5 @@
 const { isValidNumber } =
-  require("../../../src/js/apl102_validation_check_nw_04").utils;
+  require("../../../src/ud/js/apl102_validation_check_nw_04").utils;
 
 describe("Number Validation Tests", () => {
   test("Valid integer should return true", () => {
