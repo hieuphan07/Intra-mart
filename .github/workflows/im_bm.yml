@@ -3,10 +3,9 @@ name: APL102 Stock Scenario Tests
 on:
   push:
     paths:
-      - "bloommaker/apl102_scn_stock_nw_04/**"
-  pull_request:
-    paths:
-      - "bloommaker/apl102_scn_stock_nw_04/**"
+      - "BloomMaker/apl102_scn_stock_nw_04/**"
+    branches:
+      - main
 
 jobs:
   test:
