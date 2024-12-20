@@ -1,70 +1,37 @@
-name: BloomMaker CI/CD
+name: APL102 Stock Scenario Tests
 
 on:
   push:
-    branches:
-      - main
-      - develop
+    paths:
+      - "bloommaker/apl102_scn_stock_nw_04/**"
+  pull_request:
+    paths:
+      - "bloommaker/apl102_scn_stock_nw_04/**"
 
 jobs:
-  build-and-test:
+  test:
     runs-on: ubuntu-latest
+
+    defaults:
+      run:
+        working-directory: bloommaker/apl102_scn_stock_nw_04
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v3
 
-      - name: Debug directory structure
-        run: |
-          echo "Current directory: $(pwd)"
-          echo "Repository contents:"
-          ls -la
-          echo "Full directory tree:"
-          tree || (apt-get update && apt-get install -y tree && tree)
-
-      - name: Find package.json
-        run: |
-          echo "Searching for package.json files:"
-          find . -name "package.json" -type f
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
         with:
-          node-version: "16"
+          node-version: "18"
           cache: "npm"
-          cache-dependency-path: |
-            **/package.json
-            **/package-lock.json
+          cache-dependency-path: bloommaker/apl102_scn_stock_nw_04/package-lock.json
 
-      - name: Navigate and Install
-        run: |
-          # Find the package.json location
-          PACKAGE_JSON_PATH=$(find . -name "package.json" -type f | grep "bloommaker/apl102_scn_stock_nw_04" || echo "")
+      - name: Install dependencies
+        run: npm ci
 
-          if [ -z "$PACKAGE_JSON_PATH" ]; then
-            echo "Error: Could not find package.json in the expected location"
-            exit 1
-          fi
-
-          # Navigate to the directory containing package.json
-          cd $(dirname "$PACKAGE_JSON_PATH")
-          echo "Current directory: $(pwd)"
-          echo "Directory contents:"
-          ls -la
-
-          # Install dependencies
-          npm ci
-
-      - name: Run ESLint
-        if: success()
-        run: |
-          PACKAGE_JSON_PATH=$(find . -name "package.json" -type f | grep "bloommaker/apl102_scn_stock_nw_04")
-          cd $(dirname "$PACKAGE_JSON_PATH")
-          npm run lint:check
+      - name: Run linting
+        run: npm run lint
 
       - name: Run tests
-        if: success()
-        run: |
-          PACKAGE_JSON_PATH=$(find . -name "package.json" -type f | grep "bloommaker/apl102_scn_stock_nw_04")
-          cd $(dirname "$PACKAGE_JSON_PATH")
-          npm test
+        run: npm run test
