@@ -10,7 +10,6 @@
  * @return {Object} task result.
  */
 function run(input) {
-  // Error messages
   var ERROR_MSG = {
     empty: 'has not been entered',
     byteTen: 'only alow characters [0-9] and have 10 bytes',
@@ -20,42 +19,48 @@ function run(input) {
     numberCharacterOnly: 'only alow characters [0-9] and have 10 bytes',
     dateFormat: 'entered value have format yyyy/mm/dd hh:mm:ss',
   };
-  // Response message
+
   var response = {
     error: 'false',
   };
-  // Check validation
-  if (utils.isValidBytes(input.p_partNum) === 0) {
+
+  if (utils.countBytes(input.p_partNum) === 0) {
     utils.groupByError('partNum', response, ERROR_MSG.empty);
   }
-  if (utils.isValidBytes(input.p_partNum) > 12) {
+  if (utils.countBytes(input.p_partNum) > 12) {
     utils.groupByError('partNum', response, ERROR_MSG.byteTwelve);
   }
   if (!utils.isValidString(input.p_partNum)) {
     utils.groupByError('partNum', response, ERROR_MSG.azNumberCharacterOnly);
   }
-  if (utils.isValidBytes(input.p_modelUser) > 4000) {
+
+  if (utils.countBytes(input.p_modelUser) > 4000) {
     utils.groupByError('modelUser', response, ERROR_MSG.byteFourThousands);
   }
-  if (utils.isValidBytes(input.p_rank) > 10) {
+
+  if (utils.countBytes(input.p_rank) > 10) {
     utils.groupByError('rank', response, ERROR_MSG.byteTen);
   }
   if (!utils.isValidNumber(input.p_rank)) {
     utils.groupByError('rank', response, ERROR_MSG.numberCharacterOnly);
   }
-  if (utils.isValidBytes(input.p_quantity) > 10) {
+
+  if (utils.countBytes(input.p_quantity) > 10) {
     utils.groupByError('quantity', response, ERROR_MSG.byteTen);
   }
   if (!utils.isValidNumber(input.p_quantity)) {
     utils.groupByError('quantity', response, ERROR_MSG.numberCharacterOnly);
   }
+
   if (!utils.isValidDate(input.p_boxStartDt)) {
     utils.groupByError('boxStartDt', response, ERROR_MSG.dateFormat);
   }
+
   if (!utils.isValidDate(input.p_boxEndDt)) {
     utils.groupByError('boxEndDt', response, ERROR_MSG.dateFormat);
   }
-  if (utils.isValidBytes(input.p_boxType) > 4000) {
+
+  if (utils.countBytes(input.p_boxType) > 4000) {
     utils.groupByError('boxType', response, ERROR_MSG.byteFourThousands);
   }
 
@@ -64,22 +69,16 @@ function run(input) {
 
 var utils = {
   isEmpty: function (text) {
-    if (
-      text === null ||
-      text === undefined ||
-      text === '' ||
-      text.length === 0
-    ) {
-      return true;
-    }
+    return (
+      text === null || text === undefined || text === '' || text.length === 0
+    );
   },
 
-  isValidBytes: function (text) {
+  countBytes: function (text) {
     if (utils.isEmpty(text)) {
       return 0;
     }
-    var s = unescape(encodeURIComponent(text));
-    return s.length;
+    return unescape(encodeURIComponent(text)).length;
   },
 
   isValidJapanese: function (text) {
@@ -94,17 +93,18 @@ var utils = {
     if (!formatRegex.test(dateString)) {
       return false;
     }
+
     var parts = dateString.split(' ');
-    var datePart = parts[0];
-    var timePart = parts[1];
-    var dateComponents = datePart.split('/');
-    var timeComponents = timePart.split(':');
+    var dateComponents = parts[0].split('/');
+    var timeComponents = parts[1].split(':');
+
     var year = parseInt(dateComponents[0], 10);
     var month = parseInt(dateComponents[1], 10);
     var day = parseInt(dateComponents[2], 10);
     var hours = parseInt(timeComponents[0], 10);
     var minutes = parseInt(timeComponents[1], 10);
     var seconds = parseInt(timeComponents[2], 10);
+
     if (month < 1 || month > 12) {
       return false;
     }
@@ -139,8 +139,7 @@ var utils = {
   },
 
   isValidString: function (text) {
-    var regex = /^[a-zA-Z0-9]+$/;
-    return regex.test(text);
+    return /^[a-zA-Z0-9]+$/.test(text);
   },
 
   isValidNumber: function (numberString) {
