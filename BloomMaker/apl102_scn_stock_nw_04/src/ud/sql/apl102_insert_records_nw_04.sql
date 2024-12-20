@@ -9,6 +9,6 @@ VALUES
   TO_NUMBER(REPLACE(/*p_rank*/'',',','')),
   TO_NUMBER(REPLACE(/*p_quantity*/'',',','')),
   /*p_salesPlan*/'',
-  /*p_boxStartDt*/'',
-  /*p_boxEndDt*/'',
+  TO_DATE(/*p_boxStartDt*/'', 'yyyy/mm/dd hh24:mi:ss'),
+  TO_DATE(/*p_boxEndDt*/'', 'yyyy/mm/dd hh24:mi:ss'),
   /*p_boxType*/'');

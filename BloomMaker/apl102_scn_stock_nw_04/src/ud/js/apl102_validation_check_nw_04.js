@@ -13,12 +13,12 @@ function run(input) {
   // Error messages
   var ERROR_MSG = {
     empty: 'has not been entered',
-    byteTen: 'input <= 10 bytes',
+    byteTen: 'only alow characters [0-9] and have 10 bytes',
     byteTwelve: 'input <= 12 bytes',
     byteFourThousands: 'input <= 4000 bytes',
     azNumberCharacterOnly: 'only allow characters [A-Z],[a-z],[0-9]',
-    numberCharacterOnly: 'only allow characters [0-9]',
-    dateFormat: 'entered value not match format YYYY/MM/DD hh:mm:ss',
+    numberCharacterOnly: 'only alow characters [0-9] and have 10 bytes',
+    dateFormat: 'entered value have format yyyy/mm/dd hh:mm:ss',
   };
   // Response message
   var response = {
