@@ -13,7 +13,7 @@ jobs:
 
     defaults:
       run:
-        working-directory: bloommaker/apl102_scn_stock_nw_04
+        working-directory: BloomMaker/apl102_scn_stock_nw_04
 
     steps:
       - name: Checkout repository
@@ -24,7 +24,7 @@ jobs:
         with:
           node-version: "18"
           cache: "npm"
-          cache-dependency-path: bloommaker/apl102_scn_stock_nw_04/package-lock.json
+          cache-dependency-path: BloomMaker/apl102_scn_stock_nw_04/package-lock.json
 
       - name: Install dependencies
         run: npm ci
