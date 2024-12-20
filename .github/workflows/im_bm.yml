@@ -2,10 +2,10 @@ name: APL102 Stock Scenario Tests
 
 on:
   push:
-    paths:
-      - "BloomMaker/apl102_scn_stock_nw_04/**"
     branches:
       - main
+      - develop
+      - master
 
 jobs:
   test:
