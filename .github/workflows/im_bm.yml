@@ -2,8 +2,6 @@ name: BloomMaker CI/CD
 
 on:
   push:
-    paths:
-      - "BloomMaker/**"
     branches:
       - main
       - master
