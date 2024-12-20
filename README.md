@@ -4,18 +4,42 @@
 
 /intra-mart
 ├── bloommaker/ # BloomMaker applications
-│ ├── apl102_scn_stock_nw_04
+│ ├── <bloommaker_application_name>
 │ │ ├── data/ # Data files and sample datasets
+│ │ │ ├── templates/ # Excel templates and forms
+│ │ │ ├── samples/ # Sample data files
+│ │ │ └── ...
 │ │ ├── docs/ # Documentation and specifications
+│ │ │ ├── references/ # Reference materials and guides
+│ │ │ ├── requirements/ # Business and technical requirements
+│ │ │ └── ...
 │ │ └── src/ # Source code
-│ │ │ ├── sql/ # SQL scripts and queries
-│ │ │ ├── js/ # JavaScript source files
-│ ├── apl210_inventory_supply_nw_04
-│ ├── apl409_parts_master_nw_04
+│ │ │ ├── ud/ # User definition source files
+│ │ │ │ ├── sql/ # SQL scripts and queries
+│ │ │ │ ├── js/ # JavaScript source files
+│ │ │ │ └── ...
+│ │ │ ├── bm/ # BloomMaker source files
+│ │ │ │ ├── js/ # JavaScript source files
+│ │ │ │ └── ...
+│ │ │ └── ...
 │ └── ...
 └── forma/ # Forma applications
-├── apl001_machine
-└── ...
+│ ├── <forma_application_name>
+│ │ ├── data/ # Data files and sample datasets
+│ │ │ ├── templates/ # Excel templates and forms
+│ │ │ ├── samples/ # Sample data files
+│ │ │ └── ...
+│ │ ├── docs/ # Documentation and specifications
+│ │ │ ├── references/ # Reference materials and guides
+│ │ │ ├── requirements/ # Business and technical requirements
+│ │ │ └── ...
+│ │ └── src/ # Source code
+│ │ │ ├── ud/ # User definition source files
+│ │ │ │ ├── sql/ # SQL scripts and queries
+│ │ │ │ ├── js/ # JavaScript source files
+│ │ │ │ └── ...
+│ │ │ └── ...
+│ └── ...
 
 ## Commit Messages Convention
 
