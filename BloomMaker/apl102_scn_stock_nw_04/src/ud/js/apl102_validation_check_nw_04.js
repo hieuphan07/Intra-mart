@@ -155,7 +155,7 @@ var utils = {
         return target.split(search).join(replacement);
       };
     }
-    var regex = /^[0-9]+$/;
+    var regex = /^[0-9]*$/;
     var parsedNum = numberString.replaceAll(',', '');
     var parts = parsedNum.split('.');
     if (parts.length > 2) {
