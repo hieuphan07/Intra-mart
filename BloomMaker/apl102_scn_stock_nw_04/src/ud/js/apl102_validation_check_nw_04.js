@@ -12,18 +12,18 @@
 function run(input) {
   var ERROR_MSG = {
     empty: 'has not been entered',
-    byteTen: 'only alow characters [0-9] and have 10 bytes',
     byteTwelve: 'input <= 12 bytes',
-    byteFourThousands: 'input <= 4000 bytes',
     azNumberCharacterOnly: 'only allow characters [A-Z],[a-z],[0-9]',
-    numberCharacterOnly: 'only alow characters [0-9] and have 10 bytes',
+    byteFourThousands: 'input <= 4000 bytes',
+    numberTenBytes: 'only alow characters [0-9] and have 10 bytes',
+    byteTenChar: 'only allow characters [0-9] and have 10 characters',
     dateFormat: 'entered value have format yyyy/mm/dd hh:mm:ss',
   };
-
   var response = {
     error: 'false',
   };
 
+  // Validation check for partNum
   if (utils.countBytes(input.p_partNum) === 0) {
     utils.groupByError('partNum', response, ERROR_MSG.empty);
   }
@@ -34,32 +34,38 @@ function run(input) {
     utils.groupByError('partNum', response, ERROR_MSG.azNumberCharacterOnly);
   }
 
+  // Validation check for modelUser
   if (utils.countBytes(input.p_modelUser) > 4000) {
     utils.groupByError('modelUser', response, ERROR_MSG.byteFourThousands);
   }
 
+  // Validation check for rank
   if (utils.countBytes(input.p_rank) > 10) {
-    utils.groupByError('rank', response, ERROR_MSG.byteTen);
+    utils.groupByError('rank', response, ERROR_MSG.numberTenBytes);
   }
   if (!utils.isValidNumber(input.p_rank)) {
-    utils.groupByError('rank', response, ERROR_MSG.numberCharacterOnly);
+    utils.groupByError('rank', response, ERROR_MSG.numberTenBytes);
   }
 
+  // Validation check for quantity
   if (utils.countBytes(input.p_quantity) > 10) {
-    utils.groupByError('quantity', response, ERROR_MSG.byteTen);
+    utils.groupByError('quantity', response, ERROR_MSG.byteTenChar);
   }
   if (!utils.isValidNumber(input.p_quantity)) {
-    utils.groupByError('quantity', response, ERROR_MSG.numberCharacterOnly);
+    utils.groupByError('quantity', response, ERROR_MSG.byteTenChar);
   }
 
+  // Validation check for boxStartDt
   if (!utils.isValidDate(input.p_boxStartDt)) {
     utils.groupByError('boxStartDt', response, ERROR_MSG.dateFormat);
   }
 
+  // Validation check for boxEndDt
   if (!utils.isValidDate(input.p_boxEndDt)) {
     utils.groupByError('boxEndDt', response, ERROR_MSG.dateFormat);
   }
 
+  // Validation check for boxType
   if (utils.countBytes(input.p_boxType) > 4000) {
     utils.groupByError('boxType', response, ERROR_MSG.byteFourThousands);
   }
