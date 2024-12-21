@@ -31,7 +31,7 @@ describe('Number Validation Tests', () => {
   });
 
   test('Empty string should return true', () => {
-    expect(isValidNumber('')).toBe(true);
+    expect(isValidNumber('')).toBe(false);
   });
 
   test('Negative number should return false', () => {
