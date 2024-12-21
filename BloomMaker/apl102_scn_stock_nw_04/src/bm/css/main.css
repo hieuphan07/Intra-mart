@@ -1,0 +1,19 @@
+#im-element-1 {
+  padding: 1rem;
+}
+
+.im-hichee-im-richtable-header
+  .im-hichee-im-richtable-thead
+  .im-hichee-im-richtable-th,
+.im-hichee-im-richtable-tbody .im-hichee-im-richtable-col-0 {
+  text-align: center;
+}
+
+.im-hichee-im-richtable-header tr th,
+.im-hichee-im-richtable-tbody tr td {
+  max-width: 150px;
+  word-wrap: break-word; /* Legacy value */
+  overflow-wrap: break-word; /* Modern value */
+  white-space: normal; /* Allows text to wrap */
+  word-break: break-word; /* Breaks words at arbitrary points if needed */
+}
