@@ -2,4 +2,4 @@
 
 ## Description
 
-This repository contains the tests for the APL102 Stock Scenario 2.
+This repository contains the tests for the APL102 Stock Scenario 3.
